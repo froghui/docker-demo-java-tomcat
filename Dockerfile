@@ -1,4 +1,4 @@
-FROM FROM maven:3.2-jdk-7-onbuild
+FROM maven:3.2-jdk-7-onbuild
 
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve
